@@ -1,4 +1,10 @@
+"use client";
+
+import { useLeadModal } from "@/components/LeadProvider";
+
 export default function Footer() {
+  const { openLead } = useLeadModal();
+
   return (
     <footer className="footer-exact">
       <div className="container">
@@ -20,8 +26,15 @@ export default function Footer() {
             </div>
           </div>
 
+          {/* Enquiry Button Opens Form */}
           <div className="footer-cta-area">
-            <button className="footer-enquire-btn">Enquire Now</button>
+            <button
+              className="footer-enquire-btn"
+              onClick={openLead}
+            >
+              Enquire Now
+            </button>
+
             <p>Speak with our Advisor</p>
           </div>
         </div>

@@ -51,7 +51,7 @@ export default function Faq() {
   };
 
   return (
-    <section id="faqs" className="faq-section">
+    <section id="faq" className="faq-section">
       <div className="container">
         <h2 className="faq-title">
           Frequently Asked <span className="blue-text">Questions</span>
