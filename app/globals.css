@@ -1973,58 +1973,85 @@ section {
 
 
 
-/* ================= LEAD MODAL ================= */
-
+/* Overlay */
 .lead-overlay {
   position: fixed;
   inset: 0;
-  background: rgba(0, 0, 0, 0.45);
-  z-index: 5000;
+  background: rgba(0, 0, 0, 0.65);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
+  z-index: 9999;
 }
 
+/* Modal Box */
 .lead-modal {
   width: 100%;
-  max-width: 1050px;
-  height: 92vh;
-  background: #fff;
-  border-radius: 14px;
+  max-width: 1100px;
+  height: 90vh;              /* fixed modal height */
+  background: #ffffff;
+  border-radius: 18px;
   overflow: hidden;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
 }
 
-.lead-left img {
-  width: 100%;
+/* Left Image Fixed */
+.lead-left {
+  position: relative;
   height: 100%;
+}
+
+.lead-image {
   object-fit: cover;
 }
 
+/* Right Form Scrollable */
 .lead-right {
-  padding: 28px 34px;
-  overflow-y: auto;
   position: relative;
+  padding: 35px 30px;
+  height: 100%;
+  overflow-y: auto;
+  scrollbar-width: thin;
 }
 
+/* Custom Scrollbar */
+.lead-right::-webkit-scrollbar {
+  width: 6px;
+}
+
+.lead-right::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}
+
+.lead-right::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Close Button */
 .lead-close {
   position: absolute;
-  top: 14px;
+  top: 15px;
   right: 18px;
   border: none;
   background: transparent;
-  font-size: 1.8rem;
+  font-size: 28px;
   cursor: pointer;
+  color: #222;
+  z-index: 10;
 }
 
 .lead-right h2 {
-  font-size: 2rem;
-  margin-bottom: 24px;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 28px;
   color: #111827;
 }
 
+/* Form */
 .lead-form {
   display: flex;
   flex-direction: column;
@@ -2033,36 +2060,86 @@ section {
 
 .lead-form input,
 .lead-form select {
+  width: 100%;
   border: none;
   border-bottom: 1px solid #d1d5db;
-  padding: 14px 0;
-  font-size: 1rem;
+  padding: 14px 4px;
+  font-size: 16px;
+  color: #111827;
+  background: transparent;
   outline: none;
+}
+
+.lead-form input:focus,
+.lead-form select:focus {
+  border-bottom: 1px solid #2563eb;
+}
+
+.lead-form input::placeholder {
+  color: #9ca3af;
 }
 
 .lead-submit {
   margin-top: 10px;
-  background: #256fe8;
+  background: #2563eb;
   color: #fff;
   border: none;
-  height: 48px;
+  padding: 15px;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 18px;
+  font-weight: 600;
   cursor: pointer;
 }
 
-/* mobile */
-@media (max-width: 900px) {
+/* Tablet */
+@media (max-width: 992px) {
   .lead-modal {
     grid-template-columns: 1fr;
     height: 95vh;
   }
 
   .lead-left {
-    display: none;
+    height: 260px;
   }
 
   .lead-right {
-    padding: 22px;
+    height: calc(95vh - 260px);
+    padding: 24px 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .lead-overlay {
+    padding: 10px;
+  }
+
+  .lead-modal {
+    height: 96vh;
+    border-radius: 14px;
+  }
+
+  .lead-left {
+    height: 200px;
+  }
+
+  .lead-right {
+    height: calc(96vh - 200px);
+    padding: 20px 16px;
+  }
+
+  .lead-right h2 {
+    font-size: 24px;
+  }
+
+  .lead-form input,
+  .lead-form select {
+    font-size: 15px;
+    padding: 12px 2px;
+  }
+
+  .lead-submit {
+    font-size: 16px;
+    padding: 13px;
   }
 }

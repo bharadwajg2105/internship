@@ -12,7 +12,13 @@ export default function LeadModal({
       <div className="lead-modal" onClick={(e) => e.stopPropagation()}>
         {/* Left Image */}
         <div className="lead-left">
-          
+          <Image
+            src="/iimage.png"
+            alt="Business Meeting"
+            fill
+            priority
+            className="lead-image"
+          />
         </div>
 
         {/* Right Form */}
