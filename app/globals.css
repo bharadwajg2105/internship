@@ -2143,3 +2143,61 @@ section {
     padding: 13px;
   }
 }
+
+
+
+/* Better Compact Social Icons */
+.social-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  color: #334155;
+  font-size: 15px;
+  text-decoration: none;
+  border: 1px solid #e5e7eb;
+  transition: all 0.28s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* Better hover */
+.social-icons a:hover {
+  transform: translateY(-3px) scale(1.06);
+  color: #2563eb;
+  border-color: #bfdbfe;
+  background: #eff6ff;
+  box-shadow:
+    0 0 8px rgba(37, 99, 235, 0.18),
+    0 8px 18px rgba(37, 99, 235, 0.12);
+}
+
+.social-icons a svg {
+  font-size: 16px;
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .social-icons {
+    gap: 10px;
+  }
+
+  .social-icons a {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+  }
+
+  .social-icons a svg {
+    font-size: 14px;
+  }
+}

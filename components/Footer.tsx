@@ -1,6 +1,13 @@
 "use client";
 
 import { useLeadModal } from "@/components/LeadProvider";
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaXTwitter,
+  FaInstagram,
+  FaYoutube,
+} from "react-icons/fa6";
 
 export default function Footer() {
   const { openLead } = useLeadModal();
@@ -17,21 +24,32 @@ export default function Footer() {
               className="footer-main-logo"
             />
 
-            <div className="footer-icons">
-              <a href="#">f</a>
-              <a href="#">in</a>
-              <a href="#">🐦</a>
-              <a href="#">◎</a>
-              <a href="#">▶</a>
+            <div className="social-icons">
+              <a href="https://www.facebook.com/accredianlearn" aria-label="Facebook">
+                <FaFacebookF />
+              </a>
+
+              <a href="https://www.linkedin.com/company/accredian" aria-label="LinkedIn">
+                <FaLinkedinIn />
+              </a>
+
+              <a href="https://twitter.com/accredian" aria-label="X">
+                <FaXTwitter />
+              </a>
+
+              <a href="https://www.instagram.com/accredianlearn/" aria-label="Instagram">
+                <FaInstagram />
+              </a>
+
+              <a href="https://www.youtube.com/@accredian" aria-label="YouTube">
+                <FaYoutube />
+              </a>
             </div>
           </div>
 
           {/* Enquiry Button Opens Form */}
           <div className="footer-cta-area">
-            <button
-              className="footer-enquire-btn"
-              onClick={openLead}
-            >
+            <button className="footer-enquire-btn" onClick={openLead}>
               Enquire Now
             </button>
 
@@ -62,8 +80,8 @@ export default function Footer() {
             </p>
 
             <p>
-              Office Address: 4th Floor, 250, Phase IV, Udyog Vihar,
-              Sector 18, Gurugram, Haryana
+              Office Address: 4th Floor, 250, Phase IV, Udyog Vihar, Sector 18,
+              Gurugram, Haryana
             </p>
           </div>
         </div>
@@ -73,7 +91,8 @@ export default function Footer() {
 
         {/* bottom */}
         <p className="footer-copy">
-          © 2026 Accredian A Brand of FullStack Education Pvt Ltd. All Rights Reserved
+          © 2026 Accredian A Brand of FullStack Education Pvt Ltd. All Rights
+          Reserved
         </p>
       </div>
     </footer>
