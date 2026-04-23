@@ -2,6 +2,7 @@
 
 ## Live Demo
 
+NOTE: if it takes more time to open , then try opening it in Incongnito mode.
 * **Vercel Deployment:** [https://internship-five-rust.vercel.app/](https://internship-five-rust.vercel.app/)
 
 ## GitHub Repository
