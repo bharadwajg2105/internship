@@ -6,7 +6,7 @@
 
 ## GitHub Repository
 
-* **Repository:** [https://github.com/](https://github.com/)<your-username>/<your-repo-name>
+* **Repository:** [https://github.com/](https://github.com/bharadwajg2105/internship)<bharadwajg2105>/<internship>
 * **Commit History:** Available in the repository commits tab.
 
 ---
@@ -31,7 +31,6 @@ The project focuses on:
 ## Tech Stack
 
 * **Next.js** (App Router)
-* **React** Functional Components + Hooks
 * **TypeScript**
 * **CSS / Global CSS**
 * **Vercel** for deployment
@@ -194,6 +193,6 @@ AI tools were intentionally used during development as requested in the assignme
 
 ## Author
 
-**Lalit Agnihotri**
+**Mayank Bhardwaj **
 
 If you'd like, I can also create a **premium recruiter-ready README with badges, screenshots, GIF previews, and polished GitHub formatting**.
