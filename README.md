@@ -1,36 +1,199 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Accredian Enterprise Landing Page (Partial Clone)
 
-## Getting Started
+## Live Demo
 
-First, run the development server:
+* **Vercel Deployment:** [https://internship-five-rust.vercel.app/](https://internship-five-rust.vercel.app/)
+
+## GitHub Repository
+
+* **Repository:** [https://github.com/](https://github.com/)<your-username>/<your-repo-name>
+* **Commit History:** Available in the repository commits tab.
+
+---
+
+## Project Overview
+
+This project is a partial clone of the **Accredian Enterprise** website built as part of an assignment. The goal was to recreate the landing page experience with a clean, responsive UI using modern frontend practices.
+
+**Reference Website:** [https://enterprise.accredian.com/](https://enterprise.accredian.com/)
+
+The project focuses on:
+
+* Recreating major landing page sections
+* Responsive design for mobile and desktop
+* Reusable component-based architecture
+* Smooth section navigation
+* Lead capture modal/form integration
+* Deployment on Vercel
+
+---
+
+## Tech Stack
+
+* **Next.js** (App Router)
+* **React** Functional Components + Hooks
+* **TypeScript**
+* **CSS / Global CSS**
+* **Vercel** for deployment
+
+---
+
+## Features Implemented
+
+### Landing Page Sections
+
+* Responsive Navbar
+* Hero Section
+* Stats Section
+* Clients Section
+* Accredian Edge Section
+* CAT Framework Section
+* How It Works Section
+* FAQ Section
+* Testimonials Section
+* Contact CTA Section
+* Footer Section
+
+### Functional Features
+
+* Mobile sidebar navigation
+* Active nav link highlight + underline
+* Smooth scroll to sections
+* Lead capture modal on **Enquire Now / Contact Us** buttons
+* Reusable UI components
+* Responsive layout across devices
+
+---
+
+## Folder Structure
+
+```text
+app/
+├── globals.css
+├── layout.tsx
+├── page.tsx
+
+components/
+├── CatFramework.tsx
+├── Clients.tsx
+├── ContactCTA.tsx
+├── Edge.tsx
+├── Expertise.tsx
+├── FAQ.tsx
+├── Footer.tsx
+├── Hero.tsx
+├── HowItWorks.tsx
+├── Join.tsx
+├── LeadModal.tsx
+├── LeadProvider.tsx
+├── Navbar.tsx
+├── Segmentation.tsx
+├── Stats.tsx
+├── Testimonials.tsx
+
+public/
+├── image.png
+```
+
+---
+
+## Setup Instructions
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/<your-username>/<your-repo-name>.git
+cd <your-repo-name>
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Run Development Server
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 4. Open in Browser
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Approach Taken
 
-To learn more about Next.js, take a look at the following resources:
+1. Broke the UI into reusable components for maintainability.
+2. Used App Router structure in Next.js.
+3. Built responsive layouts using CSS media queries and flexible containers.
+4. Added smooth anchor navigation for section-based scrolling.
+5. Implemented a global modal system using Context API (`LeadProvider`).
+6. Matched design and spacing as closely as possible to the reference.
+7. Deployed the final build on Vercel.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## AI Usage Explanation
 
-## Deploy on Vercel
+AI tools were intentionally used during development as requested in the assignment.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Tools Used
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+* ChatGPT
+* Claude (project context / guidance)
+* GitHub Copilot (optional assistance in editor)
+
+### Where AI Helped
+
+* Component scaffolding
+* Responsive CSS suggestions
+* Refactoring repetitive UI code
+* Modal architecture guidance
+* README structuring
+* Debugging import/layout issues
+
+### Manual Improvements Done
+
+* Final UI adjustments
+* Layout corrections
+* Section spacing and typography tuning
+* Navigation behavior fixes
+* Responsive testing
+* Code organization and cleanup
+* Final integration across components
+
+---
+
+## Improvements With More Time
+
+* Add backend API to store lead form submissions
+* Form validation with error states
+* Animations / micro-interactions
+* Dark mode support
+* Performance optimization (image lazy loading, code splitting)
+* SEO enhancements with metadata per section
+* Unit / integration tests
+* CMS-based content management
+
+---
+
+## Evaluation Focus Covered
+
+* Clean execution & UI quality
+* Readable and maintainable code
+* Reusable components
+* Structured development approach
+* Effective AI-assisted workflow
+
+---
+
+## Author
+
+**Lalit Agnihotri**
+
+If you'd like, I can also create a **premium recruiter-ready README with badges, screenshots, GIF previews, and polished GitHub formatting**.
